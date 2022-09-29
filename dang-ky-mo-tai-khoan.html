@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng Ký Mở Tài Khoản Ngân Hàng</title>
+    <link rel="stylesheet" href="Case-Study-Module.css">
+</head>
+<body>
+<div class="head" style="text-align: center">
+    <div class="head2">
+        <table style="width: 100%" >
+
+            <span><a href="https://www.agribank.com.vn/vn/ca-nhan" style="color: white"  target="_blank">Khách hàng cá nhân</a></span>
+            <span><a href="https://www.agribank.com.vn/vn/doanh-nghiep" style="color: white" target="_blank">Khách hàng doanh
+                        nghiệp</a></span>
+            <span><a href="https://www.agribank.com.vn/vn/dinh-che-tai-chinh" style="color: white" target="_blank">
+                        Định chế tài chính</a></span>
+            <span><a href="https://www.agribank.com.vn/vn/ve-agribank" style="color: white" target="_blank"> Về Agribank </a></span>
+            <span><a href="https://www.agribank.com.vn/vn/ve-agribank/tin-tuc" style="color: white" target="_blank">Tin tức</a></span>
+            <span><a href="https://www.agribank.com.vn/vn/tuyen-dung" style="color: white" target="_blank">Tuyển dụng</a></span>
+            <span><a href="https://www.agribank.com.vn/vn/hoi-dap" style="color: white" target="_blank">Hỏi-Đáp</a></span>
+            <span><a href="https://www.agribank.com.vn/vn/lien-he" style="color: white" target="_blank">Liên hệ</a></span>
+            <span><a href="https://www.agribank.com.vn/en" style="color: white" target="_blank">English</a></span>
+            <div class="logoagibank">
+                <a href="https://www.agribank.com.vn/"><img src="logo_agribank.png" height="30" width="200"></a>
+            </div>
+            <div class="DanhMuc" style="text-align: left">
+                <form>
+                    <select name="danhMuc" id="danhMuc">
+                        <option>---Danh Sách Sản Phẩm---</option>
+                        <option>Thẻ Tín Dụng</option>
+                        <option>Thẻ Ghi Nợ Quốc Tế</option>
+                        <option>Thẻ Thanh Toán Nội Địa</option>
+                        <option>Tài Khoản Thanh Toán</option>
+                        <option>Tài Khoản Tiết Kiệm</option>
+                    </select>
+                    <span style="padding-left: 1000px"><img src="logo%20dienthoai.jpg" width="15 height="15></span>
+                    <span style="padding-bottom: 30px"><a href="tel 1900558818">1900558818</a>/</span>
+                    <span style="padding-bottom: 30px" ><a href="tel (+84-24)32053205">(+84-24)32053205</a></span>
+                    <span><a href="https://www.agribank.com.vn/vn/atm-chi-nhanh" target="_blank">
+                    <img src="logi%20vitri.jpg" height="18" width="18"></a> </span>
+
+                </form>
+            </div>
+        </table>
+    </div>
+</div>
+<div class="dangnhap" style="text-align: right">
+    <td>Tên Đăng nhập: </td>
+    <input type="text" id="account"  name="user">
+    <td>Mật Khẩu: </td>
+    <input type="password" id="password" name="password">
+    <input type="submit" id="login" name="dangnhap" value="Đăng Nhập" onclick="login()"><br>
+    <p style="color: blue " onclick="quenmatKhau()"><i style="cursor: pointer">Bạn đã quên mật khẩu?</i>
+</div><h1 align="center">Đăng Ký Thông tin Mở Tài Khoản Ngân Hàng AgriBank </h1>
+
+</table>
+<div id="traketqua">
+    <table border="5" align="center" height="400">
+        <tr>
+            <Th align="center" colspan="2" style="background: darkgoldenrod">THÔNG TIN KHÁCH HÀNG</Th>
+        </tr>
+        <tr>
+            <th align="left">Họ và tên:</th>
+            <th><input type="text" id="inputName" name="HovaTen"></th>
+        </tr>
+        <tr>
+            <th align="left">Số điện thoại:</th>
+            <th><input type="text" id="inputphone" name="phone"></th>
+        </tr>
+        <tr>
+            <th align="left">Email:</th>
+            <th><input type="email" id="inputemail" name="email"></th>
+        </tr>
+        <tr>
+            <th align="left">Giới tính:</th>
+            <th align="left"><select name="gender" id="inputgender">
+                <option value="Nam" id="genderNam">Nam</option>
+                <option value="Nữ" id="genderNu">Nữ</option>
+            </select></th>
+        </tr>
+        <tr>
+            <th align="left">Ngày sinh:</th>
+            <th align="left"><input type="date" name="dateofbirth" id="dateofbirth"></th>
+        </tr>
+        <tr>
+            <th align="left">Căn cước/CMT:</th>
+            <th><input type="text" name="CMT" id="CMT"></th>
+        </tr>
+        <tr>
+            <th align="left">Quê quán:</th>
+            <th><input type="text" id="inputquequan" name="quequan"></th>
+        </tr>
+        <tr>
+            <th align="left">Địa chỉ hiện tại:</th>
+            <th align="center"><textarea name="diachi" id="inputdiachi" cols="18" rows="7"></textarea>></th>
+        </tr>
+
+</table>
+    <div class="container">
+    <button type="submit" name="submit" id="inputgui" value="Gửi thông tin" onclick="inputgui1()">
+        Gửi thông tin</button>
+    </div>
+</div>
+
+</body>
+<footer>
+    <div class="footer1">
+        <div class="information">
+                <span><a href="https://www.agribank.com.vn/vn/dieu-khoan-su-dung" style="color: white" target="_blank">Điều Khoản Sử Dụng</a>
+                </span>
+            <span><a href="https://www.agribank.com.vn/vn/an-toan-bao-mat"style="color: white" target="_blank">An toàn và Bảo Mật</a></span>
+            <span><a href="https://www.agribank.com.vn/vn/so-do-trang"style="color: white" target="_blank">Sơ Đồ Trang</a></span>
+            <span><a href="https://webmail.agribank.com.vn/owa/auth logon.aspx?replaceCurrent=1&url=https%3a%2f%2fwebmail.agribank.
+        com.vn%2fowa%2f" style="color: white" target="_blank">WebMail</a></span>
+            <span><a href="https://www.agribank.com.vn/vn/dang-ky-nhan-tin"  style="color: white"target="_blank">Đăng Ký Nhận Tin</a></span>
+            <span><a href="https://www.agribank.com.vn/en" style="color: white" target="_blank">EngLish</a></span>
+            <div class="thongtinfooter">
+
+                    <span style="color: white"><br>2019 Bản quyền thuộc về Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam <br>
+                        Hội sở: Số 2 Láng Hạ, phường Thành Công, quận Ba Đình, Hà Nội <br>
+                        ĐT: <a href="tel 1900558818">1900558818</a>/<a href="tel (+84-24)32053205">(+84-24)32053205</a>.
+                        Email: cskh@agribank.com.vn. Swift Code: VBAAVNVX
+                    </span>
+            </div>
+        </div>
+        <div class="logo">
+            <tr>
+                <td><a href="https://www.facebook.com/Agribankemobilebanking" target="_blank">
+                    <img src="Facebook_f_logo_(2019).svg.png" height="25" width="25"></a></td>
+
+                <td><a href="https://www.youtube.com/embed/PanCsYFM6KE" target="_blank">
+                    <img src="logo%20youtube.png" height="25" width="25"></a></td>
+            </tr>
+        </div>
+    </div>
+</footer>
+<script>
+    function inputgui1() {
+        let name = document.getElementById("inputName").value;
+        let phone = document.getElementById("inputphone").value;
+        let email = document.getElementById("inputemail").value;
+        let gender = document.getElementById("inputgender").value;
+        let date = document.getElementById("dateofbirth").value;
+        let giayTo = document.getElementById("CMT").value;
+        let queQuan = document.getElementById("inputquequan").value;
+        let address = document.getElementById("inputdiachi").value;
+        let outPut = `<h1 align="center">Xác Nhận Thông Tin Khách hàng</h1>
+<h5 align="center"><i>Quý khách hàng vui lòng kiểm tra lại thông tin dưới đây. </i> </h5>
+<h5 align="center"><i>Nếu đã chính xác, ấn đồng ý để tạo tài khoản.Nếu chưa chính xác, ấn quay lại để bổ sung thông tin. </i></h5>
+<table border="3" align="center" >
+    <tr>
+        <th align="left">Họ và tên: ${name}</th>
+    </tr>
+    <tr>
+        <th align="left">Số điện thoại: ${phone}</th>
+    </tr>
+    <tr>
+        <th align="left">Email: ${email} </th>
+    </tr>
+    <tr>
+        <tH align="left">Giới tính: ${gender} </tH>
+    </tr>
+    <tr>
+        <tH align="left">Ngày sinh: ${date} </tH>
+    </tr>
+    <tR>
+        <tH align="left">Căn cước/CMT: ${giayTo} </tH>
+    </tR>
+    <tr>
+        <th align="left">Quê quán: ${queQuan} </th>
+    </tr>
+    <tr>
+        <th align="left">Địa chỉ hiện tại: ${address} </th>
+    </tr>
+</table>
+<div class="container">
+     <input type="submit" name="submit1" id="inputgui1" value="Xác nhận" onclick="inputgui2()">
+     <input type="submit"  id="back" name="back" value="Trở lại" onclick="back1()"</div>`
+
+        if ((name == "") || (phone == "") || (email == "")
+            || (gender == "") || (date == "") || (giayTo == "")
+            || (queQuan == "") || (address == ""))  {
+            alert("Vui lòng điền đầy đủ thông tin.")
+        } else {
+            document.getElementById("traketqua").innerHTML = outPut
+        }
+    }
+    function  back1() {
+        window.location.href  ="dang-ky-mo-tai-khoan.html"
+    }
+    function inputgui2() {
+        document.getElementById("inputgui1").value
+        alert("Chúc mừng Quý khách đã đăng ký mở tài khoản thành công. Chúng tôi sẽ gửi tin nhắn thông báo đến số điện thoại khách hàng đăng ký.")
+        window.location.href = "thong-tin-mo-tai-khoan.html"
+    }
+    function login() {
+        let user = document.getElementById("account").value;
+        let password = document.getElementById("password").value;
+        let user1 = "leanhquan"
+        let password1 = 12345678
+        if ((user == user1) && (password == password1)) {
+            window.location.href = "thong-tin-le-anh-quan.html"
+        } else if ((user !== user1) || (password !== password1)) {
+            alert("Vui lòng kiểm tra lại thông tin")
+        } else if ((user === "") || (password === "")) {
+            alert("Vui lòng điền đầy đủ thông tin")
+        }
+    }
+    function quenmatKhau() {
+        window.location.href = "quenmatkhau.html"
+    }
+
+</script>
+</html>

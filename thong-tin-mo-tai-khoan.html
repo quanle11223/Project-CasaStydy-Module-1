@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông Tin Mở Tài Khoản</title>
+    <link rel="stylesheet" href="Case-Study-Module.css">
+
+</head>
+<body>
+
+<div class="head" style="text-align: center">
+<div class="head2">
+    <table>
+
+                    <span><a style="cursor: pointer" href="https://www.agribank.com.vn/vn/ca-nhan"   target="_blank">Khách hàng cá nhân</a></span>
+                    <span><a href="https://www.agribank.com.vn/vn/doanh-nghiep" style="color: white" target="_blank">Khách hàng doanh
+                        nghiệp</a></span>
+                    <span><a href="https://www.agribank.com.vn/vn/dinh-che-tai-chinh" style="color: white" target="_blank">
+                        Định chế tài chính</a></span>
+                    <span><a href="https://www.agribank.com.vn/vn/ve-agribank" style="color: white" target="_blank"> Về Agribank </a></span>
+                    <span><a href="https://www.agribank.com.vn/vn/ve-agribank/tin-tuc" style="color: white" target="_blank">Tin tức</a></span>
+                    <span><a href="https://www.agribank.com.vn/vn/tuyen-dung" style="color: white" target="_blank">Tuyển dụng</a></span>
+                    <span><a href="https://www.agribank.com.vn/vn/hoi-dap" style="color: white" target="_blank">Hỏi-Đáp</a></span>
+                    <span><a href="https://www.agribank.com.vn/vn/lien-he" style="color: white" target="_blank">Liên hệ</a></span>
+                    <span><a href="https://www.agribank.com.vn/en" style="color: white" target="_blank">English</a></span>
+            <div class="logoagibank">
+    <a href="https://www.agribank.com.vn/"><img src="logo_agribank.png" height="30" width="200" style="cursor: pointer"></a>
+</div>
+        <div class="DanhMuc" style="text-align: left">
+            <form>
+                <select name="danhMuc" id="danhMuc">
+                    <option>---Danh Sách Sản Phẩm---</option>
+                    <option>Thẻ Tín Dụng</option>
+                    <option>Thẻ Ghi Nợ Quốc Tế</option>
+                    <option>Thẻ Thanh Toán Nội Địa</option>
+                    <option>Tài Khoản Thanh Toán</option>
+                    <option>Tài Khoản Tiết Kiệm</option>
+                </select>
+                <span style="padding-left: 1000px"><img src="logo%20dienthoai.jpg" width="15 height="15></span>
+                <span style="padding-bottom: 30px"><a href="tel 1900558818">1900558818</a>/</span>
+                <span style="padding-bottom: 30px" ><a href="tel (+84-24)32053205">(+84-24)32053205</a></span>
+                <span><a href="https://www.agribank.com.vn/vn/atm-chi-nhanh" target="_blank">
+                    <img src="logi%20vitri.jpg" height="18" width="18"></a> </span>
+            </form>
+        </div>
+</table>
+   </div>
+</div>
+<div class="dangnhap" style="text-align: right">
+    <td>Tên Đăng nhập: </td>
+    <input type="text" id="account"  name="user">
+    <td>Mật Khẩu: </td>
+    <input type="password" id="password" name="password">
+    <input type="submit" id="login" name="dangnhap" value="Đăng Nhập" onclick="login()"><br>
+    <p style="color: blue " onclick="quenmatKhau()"><i style="cursor: pointer">Bạn đã quên mật khẩu?</i>
+</div>
+</div>
+
+<h1 align="center">Thông Tin Về Tài Khoản Thanh Toán</h1></tD>
+<table border="1" style="background: lightyellow" align="center">
+    <ul>
+        <tr style="background: darkgoldenrod" align="center" >
+            <td><h3>Lợi ích</h3></td>
+        </tr>
+        <tr>
+            <td>
+                <li>Miễn phí mở tài khoản.</li>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <li>Không giới hạn số lần gửi, rút tiền tại bất kỳ thời điểm nào trong thời gian tham gia <br>
+                    Sản phẩm thông qua đa dạng kênh phân phối: trực tiếp tại quầy giao dịch, ATM/CDM, Mobile banking,
+                    Internet
+                    banking.
+                </li>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <li>Sử dụng để thanh toán, chuyển khoản, thực hiện giao dịch thanh toán không dùng tiền mặt, séc, phát
+                    hành thẻ...
+                </li>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <li>Bảo mật thông tin khách hàng, tài khoản.</li>
+            </td>
+        </tr>
+    </ul>
+    <tr style="background: darkgoldenrod" align="center" >
+        <td><h3>Thông tin sản phẩm</h3></td>
+    </tr>
+    <ul>
+        <tr>
+            <td>
+                <li>Loại tiền gửi: VND và ngoại tệ.</li>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <li>Số tiền gửi tối thiểu: 50.000 đồng hoặc 10 đơn vị tiền tệ <br>(đối với loại tiền gửi là ngoại tệ)
+                </li>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <li>Kỳ hạn: không kỳ hạn.</li>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <li>Phương thức trả lãi: Lãi nhập gốc vào ngày cuối tháng.</li>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <li>Lãi suất huy động: không kỳ hạn.</li>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <li>Quản lý biến động số dư: Khách hàng có thể sao kê giao dịch trực tiếp tại quầy giao dịch, <br>
+                    thông tin tài khoản qua Mobile banking, Internet banking, ATM/CDM.
+                </li>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <li>Biểu phí:
+                    Miễn phí với trường hợp khách hàng gửi, rút trực tiếp tại chi nhánh Agribank nơi khách hàng mở tài
+                    khoản.
+                    Phí dịch vụ khác theo biểu phí hiện hành của Agribank.
+                </li>
+            </td>
+        </tr>
+    </ul>
+</table>
+
+<div class="container">
+    <input type="button" name="dangKy" id="dangky1" value="Đăng Ký Ngay" onclick="dangkytaikhoan()">
+</div>
+
+<script>
+    function dangkytaikhoan() {
+        window.location.href = "dang-ky-mo-tai-khoan.html"
+    }
+
+    function login() {
+        let user = document.getElementById("account").value;
+        let password = document.getElementById("password").value;
+        let user1 = "leanhquan"
+        let password1 = 12345678
+        if ((user == user1) && (password == password1)) {
+            window.location.href = "thong-tin-le-anh-quan.html"
+        } else if ((user !== user1) || (password !== password1)) {
+            alert("Vui lòng kiểm tra lại thông tin")
+        } else if ((user === "") || (password === "")) {
+            alert("Vui lòng điền đầy đủ thông tin")
+        }
+    }
+    function quenmatKhau() {
+       window.location.href = "quenmatkhau.html"
+    }
+</script>
+</body>
+<footer>
+    <div class="footer1">
+        <div class="information">
+                <span><a href="https://www.agribank.com.vn/vn/dieu-khoan-su-dung" style="color: white" target="_blank">Điều Khoản Sử Dụng</a>
+                </span>
+                <span><a href="https://www.agribank.com.vn/vn/an-toan-bao-mat"style="color: white" target="_blank">An toàn và Bảo Mật</a></span>
+                <span><a href="https://www.agribank.com.vn/vn/so-do-trang"style="color: white" target="_blank">Sơ Đồ Trang</a></span>
+                <span><a href="https://webmail.agribank.com.vn/owa/auth logon.aspx?replaceCurrent=1&url=https%3a%2f%2fwebmail.agribank.
+        com.vn%2fowa%2f" style="color: white" target="_blank">WebMail</a></span>
+                <span><a href="https://www.agribank.com.vn/vn/dang-ky-nhan-tin"  style="color: white"target="_blank">Đăng Ký Nhận Tin</a></span>
+                <span><a href="https://www.agribank.com.vn/en" style="color: white" target="_blank">EngLish</a></span>
+            <div class="thongtinfooter">
+
+                    <span style="color: white"><br>2019 Bản quyền thuộc về Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam <br>
+                        Hội sở: Số 2 Láng Hạ, phường Thành Công, quận Ba Đình, Hà Nội <br>
+                        ĐT: <a href="tel 1900558818">1900558818</a>/<a href="tel (+84-24)32053205">(+84-24)32053205</a>.
+                        Email: cskh@agribank.com.vn. Swift Code: VBAAVNVX
+                    </span>
+            </div>
+        </div>
+        <div class="logo">
+            <tr>
+                <td><a href="https://www.facebook.com/Agribankemobilebanking" target="_blank">
+                    <img src="Facebook_f_logo_(2019).svg.png" height="25" width="25"></a></td>
+
+                <td><a href="https://www.youtube.com/embed/PanCsYFM6KE" target="_blank">
+                    <img src="logo%20youtube.png" height="25" width="25"></a></td>
+            </tr>
+        </div>
+    </div>
+</footer>
+</html>

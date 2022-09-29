@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quên Mật Khẩu</title>
+    <link rel="stylesheet" href="Case-Study-Module.css">
+</head>
+<body>
+<div class="head" style="text-align: center">
+    <div class="head2">
+        <table style="width: 100%" >
+
+            <span><a href="https://www.agribank.com.vn/vn/ca-nhan" style="color: white"  target="_blank">Khách hàng cá nhân</a></span>
+            <span><a href="https://www.agribank.com.vn/vn/doanh-nghiep" style="color: white" target="_blank">Khách hàng doanh
+                        nghiệp</a></span>
+            <span><a href="https://www.agribank.com.vn/vn/dinh-che-tai-chinh" style="color: white" target="_blank">
+                        Định chế tài chính</a></span>
+            <span><a href="https://www.agribank.com.vn/vn/ve-agribank" style="color: white" target="_blank"> Về Agribank </a></span>
+            <span><a href="https://www.agribank.com.vn/vn/ve-agribank/tin-tuc" style="color: white" target="_blank">Tin tức</a></span>
+            <span><a href="https://www.agribank.com.vn/vn/tuyen-dung" style="color: white" target="_blank">Tuyển dụng</a></span>
+            <span><a href="https://www.agribank.com.vn/vn/hoi-dap" style="color: white" target="_blank">Hỏi-Đáp</a></span>
+            <span><a href="https://www.agribank.com.vn/vn/lien-he" style="color: white" target="_blank">Liên hệ</a></span>
+            <span><a href="https://www.agribank.com.vn/en" style="color: white" target="_blank">English</a></span>
+            <div class="logoagibank">
+                <a href="https://www.agribank.com.vn/"><img src="logo_agribank.png" height="30" width="200"></a>
+            </div>
+            <div class="DanhMuc" style="text-align: left">
+                <form>
+                    <select name="danhMuc" id="danhMuc">
+                        <option>---Danh Sách Sản Phẩm---</option>
+                        <option>Thẻ Tín Dụng</option>
+                        <option>Thẻ Ghi Nợ Quốc Tế</option>
+                        <option>Thẻ Thanh Toán Nội Địa</option>
+                        <option>Tài Khoản Thanh Toán</option>
+                        <option>Tài Khoản Tiết Kiệm</option>
+                    </select>
+                    <span style="padding-left: 1000px"><img src="logo%20dienthoai.jpg" width="15 height="15></span>
+                    <span style="padding-bottom: 30px"><a href="tel 1900558818">1900558818</a>/</span>
+                    <span style="padding-bottom: 30px" ><a href="tel (+84-24)32053205">(+84-24)32053205</a></span>
+                    <span><a href="https://www.agribank.com.vn/vn/atm-chi-nhanh" target="_blank">
+                    <img src="logi%20vitri.jpg" height="18" width="18"></a> </span>
+                </form>
+            </div>
+        </table>
+    </div>
+</div>
+
+<h2 style="text-align: center"><b style="color: blue">Quên Mật Khẩu</b></h2>
+<h4 style="text-align: center"><i style="color:blue"
+>Quý Khách điền thông tin theo mẫu sau để cấp lại Mật Khẩu</i></h4>
+<div style="text-align: center">
+<table align="center" border="1" >
+    <tr>
+        <th style="text-align: left">Họ và Tên: </th>
+        <td><input type="text" id="leanhquan" name="user3"></td>
+    </tr>
+    <tr>
+        <th style="text-align: left">Email: </th>
+        <td><input type="email" id="email3" name="email"></td>
+    </tr>
+    <tr>
+        <th style="text-align: left">Số điện thoại:</th>
+        <td><input type="text" id="phone3" name="phone"></td>
+    </tr>
+    <tr>
+    </tr>
+</table>
+   <div class="guithontin">
+    <input type="submit" id="submitquenmatkhau" value="Gửi Thông tin" onclick="submitquenmatKhau()">
+   </div>
+</div>
+</body>
+<script>
+    function submitquenmatKhau() {
+        let id = document.getElementById("leanhquan").value;
+        let email = document.getElementById("email3").value;
+        let phone = document.getElementById("phone3").value;
+        let id1 = "leanhquan";
+        let email1 = "laquan1311@gmail.com"
+        let phone1 = "0981111111"
+        if ((id == id1) && (email == email1) && (phone == phone1)) {
+            alert("Mật Khẩu mới đã được gửi về Email mà Quý khách đã đăng ký.")
+            window.location.href = "thong-tin-mo-tai-khoan.html"
+        }
+        else if ((id != id1) || (email != email1) || (phone != phone1)) {
+            alert("Quý Khách vui lòng kiểm tra lại thông tin đã nhập.")
+        }
+        else if ((id == "") || (email == "") || (phone == "")) {
+            alert("Quý khách vui lòng điền đầy đủ thông tin")
+        }
+    }
+</script>
+<footer>
+    <div class="footer10">
+        <div class="information">
+            <span><a href="https://www.agribank.com.vn/vn/dieu-khoan-su-dung"
+                     style="color: white" target="_blank">Điều Khoản Sử Dụng</a></span>
+            <span><a href="https://www.agribank.com.vn/vn/an-toan-bao-mat"style="color:
+            white" target="_blank">An toàn và Bảo Mật</a></span>
+            <span><a href="https://www.agribank.com.vn/vn/so-do-trang"style="color:
+             white" target="_blank">Sơ Đồ Trang</a></span>
+            <span><a href="https://webmail.agribank.com.vn/owa/auth
+            logon.aspx?replaceCurrent=1&url=https%3a%2f%2fwebmail.agribank.com.vn%2fowa%2f"
+             style="color: white" target="_blank">WebMail</a></span>
+            <span><a href="https://www.agribank.com.vn/vn/dang-ky-nhan-tin"  style="color:
+             white"target="_blank">Đăng Ký Nhận Tin</a></span>
+            <span><a href="https://www.agribank.com.vn/en" style="color: white" target="_blank">EngLish</a></span>
+            <div class="thongtinfooter">
+
+            <span style="color: white"><br>2019 Bản quyền thuộc về Ngân hàng Nông nghiệp và Phát triển Nông thôn Việt Nam <br>
+            Hội sở: Số 2 Láng Hạ, phường Thành Công, quận Ba Đình, Hà Nội <br>
+            ĐT: <a href="tel 1900558818">1900558818</a>/<a href="tel (+84-24)32053205">(+84-24)32053205</a>.
+            Email: cskh@agribank.com.vn. Swift Code: VBAAVNVX
+            </span>
+            </div>
+        </div>
+        <div class="logo">
+            <tr>
+                <td><a href="https://www.facebook.com/Agribankemobilebanking" target="_blank">
+                    <img src="Facebook_f_logo_(2019).svg.png" height="25" width="25"></a></td>
+
+                <td><a href="https://www.youtube.com/embed/PanCsYFM6KE" target="_blank">
+                    <img src="logo%20youtube.png" height="25" width="25"></a></td>
+            </tr>
+        </div>
+    </div>
+</footer>
+</html>
